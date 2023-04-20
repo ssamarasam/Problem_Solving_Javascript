@@ -18,3 +18,4 @@ let arr = [-3, -2, 0, 1, 2, 4]
 
 let result = twoSum(arr, 0);
 console.log(result);
+console.log(result);
