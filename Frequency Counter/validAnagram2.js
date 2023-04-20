@@ -7,28 +7,28 @@ function validAnagram(str1, str2) {
     }
 
     let obj1 = {};
-    let obj2 = {};
-
+    
     for(let char of arr1) {
         obj1[char] = ++obj1[char] || 1;
     }
+    console.log(obj1);
 
     for(let char of arr2) {
-        obj2[char] = ++obj2[char] || 1;
+        if(!obj1[char]) {
+            return false;
+        } else {
+            obj1[char] -= 1;
+        }
     }
 
-    for(let key in obj1) {
-        if(obj1[key] !== obj2[key]) {
-            return false;
-        } 
-        
-    }
     return true;
+
+
 }
 
 
-let string1 = '';
-let string2 = '';
+let string1 = 'anagram';
+let string2 = 'nagaram';
 
 let result = validAnagram(string1, string2)
 console.log(result);
