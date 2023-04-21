@@ -1,6 +1,6 @@
 function maxSumSubArray(arr, num){
 
-    if(arr.length === 0) {
+    if(arr.length < num) {
         return null;
     }
     let max = -Infinity;
