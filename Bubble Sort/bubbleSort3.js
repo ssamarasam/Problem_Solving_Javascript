@@ -20,4 +20,5 @@ function bubbleSort(array) {
 }
 
 let result = bubbleSort([8, 7, 1, 2, 3, 5]);
+// let result = bubbleSort([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 console.log(result);
